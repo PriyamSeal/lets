@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Learn</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/q.png" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="body-results">
+    <main class="result-main">
+      <header class="result-header">
+        <p>
+          <img src="images/quizyo-1.png" class="results-logo" />
+        </p>
+        <h1 class="result-header">Results</h1>
+      </header>
+      <section id="resultsDisplay" class="results-display">
+        <h2 class="result-header" id="result">Result</h2>
+        <p id="funny">funny phrase regarding the results</p>
+        <p>
+          <a id="playAgain" class="play-again" href="selection.html"
+            >Play again?</a
+          >
+        </p>
+        <a href=" https://englishbolega.com/games/">
+          <div class="more-results" href="https://englishbolega.com/games/">
+            More Game's
+          </div></a
+        >
+        <div class="full-results">
+          <table id="fullResults" class="results-table">
+            <thead>
+              <th>Question</th>
+              <th>Your Answer</th>
+              <th>Correct Answer</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+      <div class="footer" id="footer">
+        <ul class="links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a class="active" href="creators.html">Our Team</a></li>
+          <li>
+            <a class="active" href="https://github.com/KatySage/Trivia"
+              >On Github</a
+            >
+          </li>
+        </ul>
+        <section class="copyright">
+          <p>&#169; EnglishBolega</p>
+        </section>
+      </div>
+    </main>
+    <!-- <audio  id="music">
+        <source src="sfx/main-Oman.mp3" type="audio/mp3">
+    </audio> -->
+    <audio id="click">
+      <source src="sfx/click.ogg" type="audio/mp3" />
+    </audio>
+    <audio id="applause">
+      <source src="sfx/applause.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="boos">
+      <source src="sfx/crowdboo.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+  <script src="js/confetti.js"></script>
+  <script>
+    confetti.start();
+  </script>
+  <script src="js/results.js"></script>
+</html>
